@@ -19,7 +19,7 @@ body {
     grid-template-rows: repeat(50, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    background-image: url("./campoBaloncesto.jpg");
+    background-image: url("./img/campoBaloncesto.jpg");
     width: 100vh;
     height: 65vh;
     background-repeat: no-repeat;
@@ -145,7 +145,13 @@ body {
 
 .team{
     margin: 10%;
+    
     font-family: 'Scoreboard';
+}
+
+.textTeam{
+    padding-top: 20px;
+
 }
 
 .versus{
@@ -160,10 +166,12 @@ body {
     font-family: 'NBP Sydnie2 Scoreboard';
     color: yellow;
     font-size: 100px;
+    padding-bottom: 10px;
 }
   
   #score-b {
     color: yellow;
     font-size: 100px;
     font-family: 'NBP Sydnie2 Scoreboard';
+    padding-bottom: 10px;
   }
