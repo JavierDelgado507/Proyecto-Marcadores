@@ -14,87 +14,83 @@ var puntuacion_visitante = 0;
 var puntuacion_total;
 var marcador = document.getElementById("marcador");
 
-function ActualizarTablero(){
- 
-    
-    document.getElementById("score-a").innerHTML = puntuacion_local;
-    document.getElementById("score-b").innerHTML = puntuacion_visitante;
+function ActualizarTablero() {
+  document.getElementById("score-a").innerHTML = puntuacion_local;
+  document.getElementById("score-b").innerHTML = puntuacion_visitante;
 }
 ActualizarTablero();
 
-
 tiro_libre.addEventListener("click", function () {
-    tiro_libre_disponible = true;
-})
+  tiro_libre_disponible = true;
+});
 
 equipo_local.addEventListener("click", function () {
-    if (tiro_libre_disponible == true){
-        puntuacion_local += 1;
-        ActualizarTablero();
-        tiro_libre_disponible = false;
-    } else {
-        equipo_puntuando = 1;
-    }
-})
+  if (tiro_libre_disponible == true) {
+    puntuacion_local += 1;
+    ActualizarTablero();
+    tiro_libre_disponible = false;
+  } else {
+    equipo_puntuando = 1;
+  }
+});
 
 equipo_visitante.addEventListener("click", function () {
-    if (tiro_libre_disponible == true){
-        puntuacion_visitante += 1;
-        ActualizarTablero();
-        tiro_libre_disponible = false;
+  if (tiro_libre_disponible == true) {
+    puntuacion_visitante += 1;
+    ActualizarTablero();
+    tiro_libre_disponible = false;
+  } else {
+    equipo_puntuando = 2;
+  }
+});
+
+for (let i = 0; i < lado_derecho.length; i++) {
+  lado_derecho[i].addEventListener("click", function () {
+    if (equipo_puntuando == 1) {
+      console.log("Equipo local +2 puntos");
+      puntuacion_local += 2;
+      ActualizarTablero();
+    } else if (equipo_puntuando == 2) {
+      console.log("Equipo visitante +3 puntos");
+      puntuacion_visitante += 3;
+      ActualizarTablero();
     } else {
-        equipo_puntuando = 2;
+      console.log("Selecciona el equipo que ha marcado");
     }
-})
-
-for(let i = 0; i < lado_derecho.length; i++) {
-    lado_derecho[i].addEventListener("click", function() {
-            if (equipo_puntuando == 1){
-                console.log("Equipo local +2 puntos");
-                puntuacion_local += 2;
-                ActualizarTablero();
-            } else if (equipo_puntuando == 2){
-                console.log("Equipo visitante +3 puntos");
-                puntuacion_visitante += 3;
-                ActualizarTablero();
-            } else {
-                console.log("Selecciona el equipo que ha marcado");
-            }
-            equipo_puntuando = 0;
-    })
+    equipo_puntuando = 0;
+  });
 }
 
-for(let i = 0; i < lado_izquierdo.length; i++) {
-    lado_izquierdo[i].addEventListener("click", function() {
-        if (equipo_puntuando == 1){
-            console.log("Equipo local +3 puntos");
-            puntuacion_local += 3;
-            ActualizarTablero();
-        } else if (equipo_puntuando == 2){
-            console.log("Equipo visitante +2 puntos");
-            puntuacion_visitante += 2;
-            ActualizarTablero();
-        } else {
-            console.log("Selecciona el equipo que ha marcado");
-        }
-        equipo_puntuando = 0;
-    })
+for (let i = 0; i < lado_izquierdo.length; i++) {
+  lado_izquierdo[i].addEventListener("click", function () {
+    if (equipo_puntuando == 1) {
+      console.log("Equipo local +3 puntos");
+      puntuacion_local += 3;
+      ActualizarTablero();
+    } else if (equipo_puntuando == 2) {
+      console.log("Equipo visitante +2 puntos");
+      puntuacion_visitante += 2;
+      ActualizarTablero();
+    } else {
+      console.log("Selecciona el equipo que ha marcado");
+    }
+    equipo_puntuando = 0;
+  });
 }
 
-for(let i = 0; i < lado_triple.length; i++) {
-    lado_triple[i].addEventListener("click", function() {
-        if (equipo_puntuando == 1){
-            console.log("Equipo local +3 puntos");
-            puntuacion_local += 3;
-            ActualizarTablero();
-        } else if (equipo_puntuando == 2){
-            console.log("Equipo visitante +3 puntos");
-            puntuacion_visitante += 3;
-            ActualizarTablero();
-        } else {
-            console.log("Selecciona el equipo que ha marcado");
-        }
-        equipo_puntuando = 0;
-    })
+for (let i = 0; i < lado_triple.length; i++) {
+  lado_triple[i].addEventListener("click", function () {
+    if (equipo_puntuando == 1) {
+      console.log("Equipo local +3 puntos");
+      puntuacion_local += 3;
+      ActualizarTablero();
+    } else if (equipo_puntuando == 2) {
+      console.log("Equipo visitante +3 puntos");
+      puntuacion_visitante += 3;
+      ActualizarTablero();
+    } else {
+      console.log("Selecciona el equipo que ha marcado");
+    }
+    equipo_puntuando = 0;
+  });
 }
-
