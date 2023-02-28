@@ -15,8 +15,10 @@ var puntuacion_total;
 var marcador = document.getElementById("marcador");
 
 function ActualizarTablero(){
-    puntuacion_total = puntuacion_local + " - " + puntuacion_visitante;  
-    marcador.innerHTML = puntuacion_total;
+ 
+    
+    document.getElementById("score-a").innerHTML = puntuacion_local;
+    document.getElementById("score-b").innerHTML = puntuacion_visitante;
 }
 ActualizarTablero();
 

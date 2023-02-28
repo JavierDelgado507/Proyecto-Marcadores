@@ -1,4 +1,17 @@
-/* DIV GENERATOR */
+@import url('https://fonts.cdnfonts.com/css/nbp-sydnie2-scoreboard');
+                
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container {
+    text-align: center;
+}
+
 
 #parent {
     display: grid;
@@ -11,6 +24,7 @@
     height: 65vh;
     background-repeat: no-repeat;
     background-size: cover;
+   
 }
     
 #div1 { grid-area: 10 / 3 / 43 / 10; }
@@ -69,3 +83,87 @@
 #div54 { grid-area: 9 / 36 / 15 / 37; }
 #div55 { grid-area: 9 / 35 / 17 / 36; }
 #div56 { grid-area: 9 / 34 / 20 / 35; }
+
+.marcadorTabla{
+    border:1px solid black;
+}
+
+#marcador{
+
+
+}
+
+#equipo_local{
+    background-color: #4CAF50; /* Green */
+    border-radius: 20px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+
+#tiro_libre{
+
+    background-color: gainsboro; 
+    border-radius: 20px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+
+#equipo_visitante{
+    background-color: red; 
+    border-radius: 20px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    text-align: center;
+    height: 100px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 30px;
+    background-color: gray;
+  }
+  
+
+.team{
+    margin: 10%;
+    font-family: 'Scoreboard';
+}
+
+.versus{
+    width: 200px;
+    height: 35px;
+    border-right: 30px solid transparent;
+    border-left: 30px solid transparent;
+    border-top: 50px solid RED;
+}
+
+#score-a {
+    font-family: 'NBP Sydnie2 Scoreboard';
+    color: yellow;
+    font-size: 100px;
+}
+  
+  #score-b {
+    color: yellow;
+    font-size: 100px;
+    font-family: 'NBP Sydnie2 Scoreboard';
+  }
