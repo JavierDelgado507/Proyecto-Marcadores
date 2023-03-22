@@ -14,6 +14,8 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
+    <!-- <h2 id = "tiempo_actual">El partido va a comenzar</h2> -->
+   
     <div class="container">
       <div id="parent">
         <div class="lado_izquierdo" id="div1"></div>
@@ -82,9 +84,10 @@
           <div class="textTeam">HOME</div>
           <div id="score-a"></div>
         </div>
-
+        
         <div class="versus">
-          <div>VS</div>
+          <div id="temporizador">12:00</div>
+
         </div>
         <div class="team">
           <div class="textTeam">GUEST</div>
@@ -92,9 +95,11 @@
         </div>
       </div>
 
-      <button id="equipo_local">Equipo local</button>
-      <button id="tiro_libre">Tiro libre</button>
-      <button id="equipo_visitante">Equipo visitante</button>
+      <button id = "iniciar_tiempo">Iniciar partido</button>
+      <h3 id = "marcador"></h3>
+      <button id = "equipo_local">Equipo local</button>
+      <button id = "tiro_libre">Tiro libre</button>
+      <button id = "equipo_visitante">Equipo visitante</button>
       <script src="script.js"></script>
     </div>
   </body>

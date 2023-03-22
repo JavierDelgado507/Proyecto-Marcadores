@@ -200,6 +200,24 @@ body {
 #marcador {
 }
 
+#temporizador {
+  position: relative;
+  z-index: 9999;
+  top: -45px;
+  font-family: "NBP Sydnie2 Scoreboard";
+  color: black;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.versus {
+  z-index: 1;
+}
+.VS {
+  position: absolute;
+  top: 500px;
+}
+
 #equipo_local {
   background-color: #4caf50; /* Green */
   border-radius: 20px;
@@ -259,8 +277,8 @@ body {
 }
 
 .versus {
-  width: 200px;
-  height: 35px;
+  width: 30%;
+  height: 90%;
   border-right: 30px solid transparent;
   border-left: 30px solid transparent;
   border-top: 50px solid RED;
