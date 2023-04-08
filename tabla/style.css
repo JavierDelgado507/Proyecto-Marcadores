@@ -10,6 +10,7 @@ a {
   border-bottom: 1px solid #ccc;
   padding: 0.5em 1em;
   background-color: #262626;
+  width: 100%;
 }
 
 .site-header::after {
@@ -53,29 +54,21 @@ table {
   margin-top: 2%;
   margin: 0 auto;
   border-bottom: 1px solid #ddd;
-  
 }
-
-/* table th,
-table td {
-  text-align: center;
-  
-} */
 
 .equipo {
   display: flex;
   align-items: center;
 }
 
-.name_local .nombre_largo{
+.name_local {
   margin-left: 30%;
   justify-content: flex-end;
 }
 
-.name_visitante{
-  margin-right: 70%;
+.name_visitante {
+  margin-right: 30%;
   justify-content: flex-start;
-  
 }
 
 .resultado {
@@ -86,10 +79,9 @@ table td {
   transition: color 0.3s;
   max-width: 20%;
   margin-top: 50%;
-  
 }
 
-.resultado .resultadoFinal{
+.resultado .resultadoFinal {
   text-align: center;
   margin-top: 30%;
 }
@@ -102,7 +94,6 @@ table td {
   justify-content: flex-start;
 }
 
-
 th.resultado a {
   background-color: #dee7eb;
   padding: 0.25em 0.5em;
@@ -111,12 +102,8 @@ th.resultado a {
   width: 60px;
   height: 60px;
   text-align: center;
-  
 }
-
-
 
 .logo {
   width: 70px;
-
 }
