@@ -41,6 +41,10 @@ body{
     padding: 50px 35px;
     z-index: 2; /* <-- Aumenta el z-index del formulario */
   }
+
+.registerTable{
+    height: 600px;
+}
   
 form *{
     font-family: sans-serif;

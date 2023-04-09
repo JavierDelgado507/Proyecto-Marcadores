@@ -4,11 +4,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 80vh;
 }
+
 
 .container {
   text-align: center;
+  margin-top: 100px;
 }
 
 #parent {
@@ -197,9 +199,6 @@ body {
   border: 1px solid black;
 }
 
-#marcador {
-}
-
 #temporizador {
   position: relative;
   z-index: 9999;
@@ -219,7 +218,7 @@ body {
 }
 
 #equipo_local {
-  background-color: #4caf50; /* Green */
+  background-color: #4caf50;
   border-radius: 20px;
   color: black;
   padding: 15px 32px;
@@ -251,6 +250,18 @@ body {
   font-size: 12px;
 }
 
+#iniciar_tiempo{
+  background-color: blue;
+  border-radius: 20px;
+  color: black;
+  padding: 15px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin-right: 20px;
+}
+
 .scoreboard {
   display: flex;
   justify-content: center;
@@ -262,7 +273,7 @@ body {
   border: 2px solid #000000;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   background-color: gray;
 }
 
