@@ -250,10 +250,10 @@ body {
   font-size: 12px;
 }
 
-#iniciar_tiempo{
+#iniciar_tiempo , #return{
   background-color: blue;
   border-radius: 20px;
-  color: black;
+  color: white;
   padding: 15px 22px;
   text-align: center;
   text-decoration: none;
